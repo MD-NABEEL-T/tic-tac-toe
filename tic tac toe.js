@@ -3,6 +3,7 @@ console.log(buttons);
 
 let p = document.querySelector("p");
 console.log(p);
+let resetBtn = document.querySelector("#resetbtn");
 
 let onturns = "X"; // Track the current player
 let gameOver = false; // Flag to stop the game after a winner is found
@@ -65,3 +66,7 @@ const checkDraw = () => {
         gameOver = true;
     }
 };
+
+resetBtn.addEventListener("click", () => {
+    location.reload();
+});
